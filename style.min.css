@@ -23,8 +23,8 @@
 }
 
 body {
-    background: #e6e6e6;
-    background: var(--bg)
+    background: #990000;
+    background: var(--bg);
 }
 
 .nightmode {

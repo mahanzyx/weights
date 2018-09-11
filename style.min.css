@@ -1,1 +1,146 @@
-:root{--bg:#e6e6e6;--plus:#1a711d;--plus-bg:#fff;--counter:#981717;--stroke:#222;--night-c:#ccc;--night-bg:#11145a}.nmode{--bg:#484848;--plus-bg:#222;--counter:#b96464;--stroke:#aaa;--night-bg:#3a3e95;--night-c:#292929}*{box-sizing:border-box;transition:background .5s,color,.5s}body{background:#e6e6e6;background:var(--bg)}.nightmode{position:absolute;top:0;left:0;padding:10px;color:#ccc;color:var(--night-c);background:#11145a;background:var(--night-bg)}.add-weight{position:absolute;top:32px;right:32px;width:64px;height:64px;font-weight:bolder;color:#1a711d;color:var(--plus);font-size:50px;background:#fff;background:var(--plus-bg);line-height:64px;text-align:center;box-shadow:1px 1px 3px rgba(0,0,0,.2);cursor:pointer;user-select:none}.remove-weight{text-align:center;box-shadow:1px 1px 3px rgba(0,0,0,.2);cursor:pointer;user-select:none;color:#1a711d;color:var(--plus);font-size:50px;background:#fff;background:var(--plus-bg);position:absolute;top:100px;right:32px;width:64px;height:64px;font-weight:400;line-height:55px}.hold-img{position:absolute}.stroke{width:5px;position:absolute;bottom:100%;background:#222;background:var(--stroke);height:200px;left:50%;margin-left:-2px}.holder{position:relative;display:inline-block;top:-40px;left:50%;margin-left:-200px;width:400px;height:545px;transition:top .4s cubic-bezier(.18,.66,.25,1.67)}.weights{position:absolute;bottom:0;left:25px}.weight{position:relative;margin-top:-65px}.count{background:red;border-radius:50%;width:30px;height:30px;line-height:30px;text-align:center;color:#fff;color:var(--plus-bg);background:#981717;background:var(--counter);font-size:12px;margin:-12px 0 0 2px;position:absolute;display:inline-block;pointer-events:none}@media screen and (max-width:420px){.holder{transform:scale(.7)}}@media screen and (max-width:300px){.holder{transform:scale(.5)}}
+:root {
+    --bg: #e6e6e6;
+    --plus: #1a711d;
+    --plus-bg: #fff;
+    --counter: #981717;
+    --stroke: #222;
+    --night-c: #ccc;
+    --night-bg: #11145a
+}
+
+.nmode {
+    --bg: #484848;
+    --plus-bg: #222;
+    --counter: #b96464;
+    --stroke: #aaa;
+    --night-bg: #3a3e95;
+    --night-c: #292929
+}
+
+* {
+    box-sizing: border-box;
+    transition: background .5s, color, .5s
+}
+
+body {
+    background: #e6e6e6;
+    background: var(--bg)
+}
+
+.nightmode {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    color: #ccc;
+    color: var(--night-c);
+    background: #11145a;
+    background: var(--night-bg)
+}
+
+.add-weight {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    width: 64px;
+    height: 64px;
+    font-weight: bolder;
+    color: #1a711d;
+    color: var(--plus);
+    font-size: 50px;
+    background: #fff;
+    background: var(--plus-bg);
+    line-height: 64px;
+    text-align: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    user-select: none
+}
+
+.remove-weight {
+    text-align: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    user-select: none;
+    color: #1a711d;
+    color: var(--plus);
+    font-size: 50px;
+    background: #fff;
+    background: var(--plus-bg);
+    position: absolute;
+    top: 100px;
+    right: 32px;
+    width: 64px;
+    height: 64px;
+    font-weight: 400;
+    line-height: 55px
+}
+
+.hold-img {
+    position: absolute
+}
+
+.stroke {
+    width: 5px;
+    position: absolute;
+    bottom: 100%;
+    background: #222;
+    background: var(--stroke);
+    height: 200px;
+    left: 50%;
+    margin-left: -2px
+}
+
+.holder {
+    position: relative;
+    display: inline-block;
+    top: -40px;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+    height: 545px;
+    transition: top .4s cubic-bezier(.18, .66, .25, 1.67)
+}
+
+.weights {
+    position: absolute;
+    bottom: 0;
+    left: 25px
+}
+.weight:nth-child(2n){
+    filter: grayscale(100%);
+}
+.weight {
+    position: relative;
+    margin-top: -65px
+}
+
+.count {
+    background: red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    color: var(--plus-bg);
+    background: #981717;
+    background: var(--counter);
+    font-size: 12px;
+    margin: -12px 0 0 2px;
+    position: absolute;
+    display: inline-block;
+    pointer-events: none
+}
+
+@media screen and (max-width:420px) {
+    .holder {
+        transform: scale(.7)
+    }
+}
+
+@media screen and (max-width:300px) {
+    .holder {
+        transform: scale(.5)
+    }
+}

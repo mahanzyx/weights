@@ -101,7 +101,9 @@ body {
     height: 545px;
     transition: top .4s cubic-bezier(.18, .66, .25, 1.67)
 }
-
+.nightmode{
+    cursor: pointer;
+}
 .weights {
     position: absolute;
     bottom: 0;

@@ -134,7 +134,18 @@ body {
     display: inline-block;
     pointer-events: none
 }
-
+.title{
+    position: fixed;
+    width:100%;
+    text-align: center;
+    margin-left: -8px;
+    z-index: 999999;
+    background: #222;
+    height: 80px;
+    line-height: 80px;
+    color: #CCC;
+    bottom: 0;
+}
 @media screen and (max-width:420px) {
     .holder {
         transform: scale(.7)
